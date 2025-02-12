@@ -13,13 +13,19 @@ Challenge-SNCF-Transilien/
 │   │   ├── x_test.csv
 │   │   ├── y_train.csv
 │   │   ├── y_sample.csv
-│   ├── processed/            # Données après prétraitement
-│── notebooks/                # Jupyter Notebooks pour l'exploration et le modèle
+│   ├── processed/      
 │── src/                      # Code source du projet
-│── models/                   # Modèles entraînés
+│   ├── data_processing.py    # Scripts pour charger et transformer les données
+│   ├── train_model.py        # Script pour entraîner le modèle
+│   ├── predict.py            # Script pour générer des prédictions
+│── models/                   # Modèles entraînés (optionnel)
+│   ├── best_model.pkl        # Sauvegarde du modèle entraîné
 │── submissions/              # Fichiers de soumission
+│   ├── submission.csv
 │── requirements.txt          # Liste des packages Python nécessaires
+│── environment.yml           # Configuration de l’environnement conda (optionnel)
 │── README.md                 # Documentation principale du projet
+│── LICENSE                   # Licence du projet
 │── .gitignore                # Fichiers à ignorer par Git
 ```
 
