@@ -3,6 +3,7 @@ __pycache__/
 *.pyo
 *.pdf
 .env
+SNCF_env/
 
 .DS_Store
 best_model.pkl
