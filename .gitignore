@@ -7,5 +7,4 @@ __pycache__/
 SNCF_env/
 
 .DS_Store
-best_model.pkl
 
