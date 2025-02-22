@@ -1,9 +1,6 @@
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 def model_training(x_train, y_train):
 
@@ -18,7 +15,7 @@ def model_training(x_train, y_train):
     ])
     model.compile(optimizer='adam', loss='mae', metrics=['mae'])
 
-    history = model.fit(x_train_tensor, y_train_tensor, epochs=50, batch_size=64, validation_split=0.2, verbose=1)
+    history = model.fit(x_train_tensor, y_train_tensor, epochs=5, batch_size=64, validation_split=0.2, verbose=1)
     
     return model, history
     
