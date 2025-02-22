@@ -1,4 +1,4 @@
-# Challenge Data SNCF (SNCF-Transilien) : Prédiction du temps d'attente à quai
+# Challenge Data (SNCF-Transilien) : Prédiction du temps d'attente à quai
 
 ## Description du projet
 Ce projet vise à prédire le temps d'attente à quai des trains SNCF-Transilien en utilisant des modèles de Machine Learning et des séries temporelles.
