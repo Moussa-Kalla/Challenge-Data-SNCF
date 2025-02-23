@@ -9,8 +9,6 @@ def metrics(x_train, y_train, model):
     print(f"MAE: {mae:.4f}")
     print(f"MSE: {mse:.4f}")
     print(f"R² Score: {r2:.4f}")
-    
-
 
 def plots(x_train, y_train, model, history):
     model_predict = model.predict(x_train)
@@ -33,8 +31,6 @@ def plots(x_train, y_train, model, history):
     plt.legend()
 
     plt.tight_layout()
-    plt.show()
-
     plt.subplot(1, 3, 3)
     plt.scatter(y_train, model_predict, alpha=0.5)
     plt.xlabel("Valeurs Réelles (Y_train)")
