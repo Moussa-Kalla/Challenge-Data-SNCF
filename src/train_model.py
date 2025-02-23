@@ -1,6 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+from sklearn.ensemble import RandomForestRegressor
 
 def model_training(x_train, y_train):
 
@@ -13,10 +14,10 @@ def model_training(x_train, y_train):
         layers.Dense(32, activation='relu'),
         layers.Dense(1)
     ])
-    model.compile(optimizer='adam', loss='mae', metrics=['mae'])
+    
+    model = RandomForestRegressor(max_depth=5, random_state=None,max_features='auto',max_leaf_nodes=5,n_estimators=100)
+    #model.compile(optimizer='adam', loss='mae', metrics=['mae'])
 
-    history = model.fit(x_train_tensor, y_train_tensor, epochs=5, batch_size=64, validation_split=0.2, verbose=1)
+    history = model.fit(x_train_tensor, y_train_tensor)#, epochs=50, batch_size=32, validation_split=0.2, verbose=1)
     
     return model, history
-    
-    

@@ -12,19 +12,19 @@ Challenge-SNCF-Transilien/
 │   │   ├── x_train.csv
 │   │   ├── x_test.csv
 │   │   ├── y_train.csv
-│   │   ├── y_sample.csv
-│   ├── processed/      
+│   │   └── y_sample.csv   
 │── src/ 
-│   ├── data_processing.py   
+│   ├── data_processing.py
+│   ├── main.py
+│   ├── metrics_and_plots.py
 │   ├── train_model.py       
-│   ├── predict.py           
-│── models/                 
-│   ├── best_model.pkl       
+│   ├── predict.py 
+│   └── train_model.py             
 │── submissions/              
-│   ├── submission.csv
+│   └──  submission.csv
 │── .gitignore 
 │── README.md  
-│── requirements.txt                    
+└── requirements.txt                    
 ```
 
 ## Données
@@ -32,5 +32,12 @@ Les données proviennent des arrêts de train en Île-de-France, avec des variab
 
 ## Installation
 ```bash
+git clone https://github.com/Moussa-Kalla/Challenge-Data-SNCF
+```
+
+```bash
 pip install -r requirements.txt
+```
+```bash
+python src/main.py
 ```
