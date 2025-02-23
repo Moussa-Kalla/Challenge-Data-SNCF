@@ -5,6 +5,6 @@ __pycache__/
 .env
 
 SNCF_env/
-
+test.ipynb
 .DS_Store
 
