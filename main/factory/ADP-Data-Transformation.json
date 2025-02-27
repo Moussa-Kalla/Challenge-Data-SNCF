@@ -1,0 +1,9 @@
+{
+	"name": "ADP-Data-Transformation",
+	"location": "francecentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "233e65c7-331b-487f-bfc2-32b108b174d9",
+		"tenantId": "4541756e-ce5f-459a-b37d-136edd8177c2"
+	}
+}
