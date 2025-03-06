@@ -69,3 +69,4 @@ Les métriques utilisées pour évaluer la performance du modèle sont :
 
 
 
+
